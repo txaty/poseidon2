@@ -1,9 +1,11 @@
-use super::poseidon2_params::Poseidon2Params;
+use std::sync::Arc;
+
+use lazy_static::lazy_static;
+
 use crate::fields::bn256::FpBN256;
 use crate::fields::utils::from_hex;
 
-use lazy_static::lazy_static;
-use std::sync::Arc;
+use super::poseidon2_params::Poseidon2Params;
 
 type Scalar = FpBN256;
 
